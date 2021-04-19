@@ -1,3 +1,3 @@
 # CALCULATOR
 
-Building calculator using HTML, CSS and basic JavaScript 
+Building responsive basic calculator using HTML, CSS and basic JavaScript.
