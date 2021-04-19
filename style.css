@@ -1,0 +1,66 @@
+*, ::before, ::before {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+body{
+    background: #CC95C0;  
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); 
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 400px;
+    margin: 30px auto;
+    background-color: black;
+}
+.screen{
+    font-size: 40px;             
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    color: white;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap:normal;
+
+}
+.previousOperand{
+    font-size: 80%;
+}
+.currentOperand{
+    font-size: 100%;
+}
+div > button {
+    height: 100px;
+    width: 24.5%;
+    border: none;
+    border-radius: 0;
+    font-size: 40px;
+    cursor: pointer;
+}
+div > button:hover{
+    background-color: rgb(209, 205, 205);
+}
+div > button:active{
+    background-color: whitesmoke;
+}
+.calc-row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+.double{
+    width: 49.7%;
+}
+.triple{
+    width: 74.8%;
+}
