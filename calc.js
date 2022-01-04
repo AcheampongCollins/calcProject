@@ -1,4 +1,4 @@
- 
+
 
 
 class Calculator {
@@ -11,15 +11,16 @@ class Calculator {
      clear(){
         this.currentOperand = '';
         this.previousOperand = '';
-        this.operation = undefined; 
+        this.operation = undefined;
      }
      delete(){
          this.currentOperand = this.currentOperand.toString().slice(0,-1);
      }
-      
+
      appendNumber(number){
          if(number === '.' && this.currentOperand.includes('.')) return;
           this.currentOperand = this.currentOperand.toString() + number.toString();
+
      }
 
      chooseOperation(operation){
@@ -30,7 +31,7 @@ class Calculator {
       this.operation = operation;
       this.previousOperand = this.currentOperand;
       this.currentOperand = '';
-    } 
+    }
 
     compute(){
         let computation;
@@ -76,7 +77,7 @@ class Calculator {
                return integerDisplay;
            }
     }
-     
+
      updateDisplay(){
          this.currentOperanTextElement.innerText =this.getDisplayNumber(this.currentOperand);
          if(this.previousOperand != ''){
@@ -84,7 +85,7 @@ class Calculator {
          } else {
              this.previousOperandTextElement.innerText = '';
          }
-        
+
      }
 
 }
@@ -114,7 +115,7 @@ operationBtn.forEach(button => {
         calculator.updateDisplay()
     })
 })
- 
+
 equalTo.addEventListener('click', () =>{
     calculator.compute();
     calculator.updateDisplay();
